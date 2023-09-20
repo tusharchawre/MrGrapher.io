@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inria+Sans&family=Jacques+Francois&family=Jim+Nightshade&family=Joti+One&family=Julius+Sans+One&family=Smooch&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.cursor{
+    width: 15px;
+    height: 15px;
+    position: fixed;
+    background-color: aliceblue;
+    z-index: 999;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    pointer-events: none;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+.main{
+
+    height: fit-content;
+    background-color: black;
+    width: 100%;
+    color: white;
+    cursor: none;
+
+}
+
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+.nav h5{
+    padding: 0 50px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 1.2rem;
+}
+
+.hero{
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 13vh 5vw;
+
+
+}
+
+
+
+
+
+
+.bounding{
+    width: 100%;
+    overflow: hidden;
+   
+}
+
+.boundingelem{
+    transform: translateY(100%);
+}
+
+
+
+.hero a{
+    width: 100%;
+    text-align: right;
+    
+}
+
+.hero h5{
+    font-size: 18px;
+    font-family: 'Inria Sans',sans-serif;  
+    width: 100%;
+
+}
+
+
+
+
+
+.pop{
+
+    transform: translateY(-40px);
+    padding: 10vh;
+    /* background-color: aqua; */
+    position: relative;
+}
+
+
+.popimage{
+    position: absolute;
+    overflow: hidden;
+    border-radius: 5px;
+
+
+    height: 24vmax;
+    width: 14vmax;
+    /* background-color: yellow; */
+
+}
+
+.popimage img{
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+.pop h1{
+    transform: translateY(100%);
+    text-align: center;
+    font-size: 10vmin;
+    font-family: 'Jacques Francois', serif;
+    font-weight: 400;
+
+    
+}
+
+/* Hero Text styles */
+.pixel{
+
+    font-family: 'Julius Sans One', sans-serif;
+
+}
+
+
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+
+.extra{
+
+    font-size: 1.2em;
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+    to right,
+    rgb(123, 31, 162),
+    rgb(103, 58, 183),
+    rgb(244, 143, 177),
+    rgb(123, 31, 162)
+  );
+  background-size: 200%;
+  background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+white-space: nowrap;
+
+
+    font-family: 'Jim Nightshade', cursive;
+}
+
+.slay{
+    font-family: 'Joti One', cursive;
+}
+/*  */
+
+
+/* Showcase styles */
+.showcase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.showcase .arrowimg{
+    width: 8vw;
+}
+
+
+.showcase .mainimg{
+    width: 72vw;
+    height: 100%;
+   
+    position: relative;
+
+  
+
+
+} 
+
+.mainimg img{
+    border-radius: 10px;
+}
+
+.mainimg #img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 3;
+
+
+
+
+}
+
+.mainimg #img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: relative;
+
+
+
+
+
+}
+
+
+.ArrText{
+    rotate: 5deg;
+    font-size: 2.5vw;
+    font-family: 'Smooch', cursive;}
+
+
+/*  */
+
+
+
+/* doka dhuki styling */
+
+.info{
+
+    padding: 0 11vmax;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15vh;
+
+}
+
+.info h5{
+    font-family: 'Indie Flower', cursive;
+    font-size: 3vmax;
+}
+
+.infocard{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    gap: 5vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about .arr{
+    transform: translateY(-30%);
+    width: 27vw;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity:1;
+}
+    50%  { opacity:0.5;
+}
+    100% { opacity:1; 
+}
+  }
+
+.about:hover .arr{
+    animation: flickerAnimation .7s infinite;
+
+}
+
+
+
+.infocard .infoimg{
+    overflow: hidden;
+    border-radius: 12px;
+
+
+}
+
+.infoimg img{
+    width: 23vw;
+
+    transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+}
+
+.infoimg:hover img{
+
+    scale: 1.1;
+
+}
+
+.infotext {
+    width: 36vw;
+
+}
+
+.infotext p {
+    font-size: 1.2vmax;
+}
+
+
+
+
+
+/* Footer Styles */
+
+.footer{
+    font-size: 1rem;
+
+    padding: 0 6vw;
+    padding-top: 7vw;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inria Sans', sans-serif;
+}
+
+.copyright p{
+    color: rgba(255, 255, 255, 0.43);
+    font-size: 12px;
+
+
+}
+
+
+
+.socials{
+    gap: 5vw;
+    display: flex;
+}
+
+.time{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
