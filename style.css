@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inria+Sans&family=Jacques+Francois&family=Jim+Nightshade&family=Joti+One&family=Julius+Sans+One&family=Smooch&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Indie+Flower&family=Inria+Sans&family=Jacques+Francois&family=Jim+Nightshade&family=Joti+One&family=Julius+Sans+One&family=Smooch&display=swap');
 
 
 
@@ -351,7 +350,7 @@ white-space: nowrap;
 /* Footer Styles */
 
 .footer{
-    font-size: 1vmax;
+    font-size: 1rem;
 
     padding: 0 6vw;
     padding-top: 7vw;
@@ -380,4 +379,38 @@ white-space: nowrap;
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+
+.overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    display: flex;
+
+    
+}
+
+.bar{
+    width: 10vw;
+    height: 105vh;
+    background-color: rgb(40, 40, 40);
+}
+
+
+.counter{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    color: white;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 5;
+    color: white;
+    padding: 2vmax 5vmax;
+    font-family: 'Croissant One', cursive;
+    font-size: 6vmax;
 }
