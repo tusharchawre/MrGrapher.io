@@ -33,46 +33,6 @@ function time(){
 time();
 
 
-function startloader(){
-    let counter = document.querySelector(".counter")
-    let currentvalue = 0
-
-    function updateCounter(){
-        if (currentvalue === 100){
-            return;
-        }
-        else
-        currentvalue += Math.floor(Math.random()*10)+1;
-
-        if(currentvalue>100){
-            currentvalue = 100;
-        }
-
-        counter.textContent = currentvalue
-
-        let delay = Math.floor(Math.random()*200)+50
-        setTimeout(updateCounter,delay);
-    }
-    updateCounter()
-}
-
-startloader()
-
-gsap.to(".counter",{
-    delay: 3.5,
-    opacity: 0
-})
-
-gsap.to(".bar",1.5,{
-    delay: 3.5,
-    height:0,
-    stagger: {
-        amount: 0.5
-    },
-    ease:  Power3
-})
-
-
 
 
 
