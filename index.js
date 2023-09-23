@@ -38,12 +38,6 @@ time();
 
 
 
-
-
-
-
-
-
 let crsr = document.querySelector(".cursor")
 let throttleFunction = (func, delay)=>{
      
@@ -73,7 +67,7 @@ let hero = document.querySelector(".hero")
 
 gsap.to(herotext.querySelectorAll("h1"),{
     y: "0",
-    delay: 6,
+    delay: 1.5,
     ease: Power4,
     duration: 1,
     stagger: 0.5
@@ -81,17 +75,16 @@ gsap.to(herotext.querySelectorAll("h1"),{
 
 gsap.from(document.querySelector(".nav"),{
 
-    delay: 5.5,
     opacity: 0,
     duration: 1.5,
     ease: Power4
 })
 
 gsap.from(hero.querySelectorAll("h5"),{
-    delay: 7.5,
+
     opacity: 0,
     duration: 2,
-
+    delay: 3,
     ease: Power4
 
 })
